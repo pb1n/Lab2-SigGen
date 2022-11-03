@@ -34,5 +34,9 @@ Modified the design so that **_vbdValue()_** function is used to chage the frequ
 
 --
 
+Two sinusodial waves are observed when simulating on the vbuddy. To get this working I:
+- Changed the rom.sv file to accommodate dual port rom. It now takes in two addresses and outputs two corresponding values.
+- Added logic to the sinegen.sv file to add an offset to the address, which changes the phase of the second wave that is plotted. 
+- Changed and added logic to the test bench to plot the two signals simultaneously.
 
 
