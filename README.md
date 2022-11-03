@@ -29,3 +29,5 @@ A sinewave was observed, although it took some time because I have a smooth brai
 ### _Test-yourself Challenge_ 
 
 Modified the design so that **_vbdValue()_** function is used to chage the frequency of the sinewave generated. The higher **_vbdValue()_** is, the higher the frequency of the sinewave becomes.
+
+## Task 2 - Sine and Cosine Dual wave generation
