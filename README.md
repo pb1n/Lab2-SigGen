@@ -22,4 +22,10 @@ By the end of this experiment, you should be able to:
 * read and write to a RAM component simultaneously
 * use parameterisation to generalise designs for different address or data widths
 
-##Task 1 - Simple sinewave generator
+## Task 1 - Simple sinewave generator
+
+A sinewave was observed, although it took some time because I have a smooth brain and didn't copy something correctly.
+
+### _Test-yourself Challenge_ 
+
+Modified the design so that **_vbdValue()_** function is used to chage the frequency of the sinewave generated. The higher **_vbdValue()_** is, the higher the frequency of the sinewave becomes.
