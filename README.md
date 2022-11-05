@@ -37,4 +37,21 @@ Two sinusodial waves are observed when simulating on the vbuddy. To get this wor
 - Added logic to the sinegen.sv file to add an offset to the address, which changes the phase of the second wave that is plotted. 
 - Changed and added logic to the test bench to plot the two signals simultaneously.
 
+## Task 3 - Capture and display audio signal in RAM
+
+The goal of Task 3 is to capture real audio signal using the microphone/amplifier module on Vbuddy. These samples are written to a dual-port RAM stored in successive locations. At the same time, read back from the RAM the store signal at a different address offset from the write address. In this way, the retrieved signal is a delayed version of the original signal.
+
+The difference between the read and write addresses is the offset. The **_vbdValue()_** function is used to vary this offset using the rotary encoder.
+
+To complete this task I:
+- Made a dual port RAM module
+- Made a module, sigdelay, which utilises a counter and dual port RAM module.
+  - The counter simply increments the write address.
+  - The offset from **_vbdValue()_** is added to the write address to make the read address.
+  - The RAM module stores an audio sample at the write address, and outputs an audio sample stored at the read address.
+
+Observation:
+- When a sinewave is picked up by the microphone, it is shown after an offset of clock cycles on the Vbuddy display.
+
+
 
